@@ -22,7 +22,7 @@ void *contar_estudiante_para_c1(){
 	int cantidad_estudiantes;
 
 
-	while(true)//por siempre
+	while(true)
 	{
 		sem_getvalue(&disponible_puertaA, &i); // si no se se evalua si hay o no acceso de estudiantes
 		
@@ -39,7 +39,7 @@ void *contar_estudiante_para_c1(){
 		}
 		return(cantidad_estudiantes);			
 
-		}//end while
+		}
 }
 
 
@@ -47,7 +47,7 @@ void *contar_estudiante_para_c1(){
 void *contar_estudiante_para_c2(){
 	int cantidad_estudiantes;
 
-	while(true)//por siempre
+	while(true)
 	{
 		sem_getvalue(&disponible_puertaB, &i); // si no se se evalua si hay o no acceso de estudiantes
 		
@@ -64,6 +64,6 @@ void *contar_estudiante_para_c2(){
 		}
 		return(cantidad_estudiantes);			
 
-	}//end while
+	}
 }
 
